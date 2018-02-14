@@ -1,0 +1,19 @@
+
+
+                           NOTICE
+
+The optimized code for the curve P-224 was written by Emilia Käsper
+and the optimized code for the curves P-256 and P-521 were written by
+Adam Langley (both at Google) and distributed under the Apache License
+2.0.
+
+More precisely, the files ecp_nistp224_core.c, ecp_nistp256_core.c,
+and ecp_nistp521_core.c are stripped down versions of ecp_nistp224.c,
+ecp_nistp256.c, and ecp_nistp521.c, respectively, found in the OpenSSL
+library, and thus derived work as defined by Apache License 2.0.
+
+These designs and implementations are based on a previous
+implementation written by Dan Bernstein.
+
+ATTENTION! The Verificatum Elliptic Curve library (VEC) as a whole is
+licensed under the GNU Affero General Public License.
