@@ -23,13 +23,13 @@ additional techniques only suitable for very large number of
 exponentiations.
 
 We have copied optimized code from the [OpenSSL
-project](https://www.openssl.org), for a few standard curves. These
-are P-224 (written by Emilia Käsper), P-256 and P-521 (written by
-David Langley). This code is in turn heavily inspired by the
-implementation of Curve25519 by Dan Bernstein. The optimized code is
-roughly a factor of three faster than the code based cleanly on top of
-GMP, which explains the difference in running time between curves of
-the same size.
+project](https://www.openssl.org) for a few standard curves. These are
+P-224 (written by Emilia Käsper), P-256 and P-521 (written by David
+Langley). This code is in turn heavily inspired by the implementation
+of Curve25519 by Dan Bernstein. The optimized code is roughly a factor
+of three faster than the code based cleanly on top of GMP, which
+explains the difference in running time between curves of the same
+size.
 
 Torbjorn Granlund helped us with the benchmarking. Emilia Käsper took
 the time to answer our questions about her code and interpreting the
