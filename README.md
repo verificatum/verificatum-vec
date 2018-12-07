@@ -11,7 +11,7 @@ self-contained and relatively small library that we hope can converge
 to a static state. Secondly, our particular application allow using
 certain optimizations and we need low-level access to these.
 
-Our code is not intended to be secure against side-channel attacks,
+Our code is **not intended to be secure against side-channel attacks**,
 since we do not need it for the applications we have in mind. It is
 the responsibility of the user to make sure that this is the case in
 their application.
@@ -54,7 +54,7 @@ also read `README_DEV.md`.
 
 ## Building
 
-Building has been tested with GMP 6.1.1. Then `LIBRARY_PATH` must
+Building has been tested with GMP 6.1.2. Then `LIBRARY_PATH` must
 point to `libgmp.la` and `C_INCLUDE_PATH` must point to `gmp.h`. This
 is usually the case automatically after installing GMP.
 
@@ -73,6 +73,11 @@ Use
         make install
 
 to install the library `libvec.{la,a,so}`.
+
+
+You may need to run `sudo /sbin/ldconfig` on some platforms which have
+flawed implementations of the cache that stores locations of
+libraries.
 
 
 ## Usage
@@ -106,7 +111,7 @@ tests the arithmetic of the curves P-224 and P-256 and nothing else.
 ## API Documentation
 
 You may use
- 
+
         make api
 
 to build also some documentation using Doxygen (this assumes you have

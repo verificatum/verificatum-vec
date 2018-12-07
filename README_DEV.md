@@ -10,9 +10,7 @@ distribution you can use
 to run the necessary libtool, autoconf, etc routines and copy a few
 additional M4 scripts to the right place to put the directory in a
 similar state to that of a distribution directory. Then you can run
-the usual
-
-        ./configure; make; sudo make install
+the usual `./configure; make; sudo make install`.
 
 If the state of the directory is messed up, then you can run
 

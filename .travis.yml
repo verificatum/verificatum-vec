@@ -1,0 +1,10 @@
+sudo: required
+language: c
+compiler: gcc
+
+before_install:
+    - sudo apt-get update
+    - sudo apt-get install --yes m4 libgmp-dev
+
+script:
+    - make -f Makefile.build && ./configure && make && make check
