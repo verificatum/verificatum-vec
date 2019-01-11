@@ -79,6 +79,14 @@ You may need to run `sudo /sbin/ldconfig` on some platforms which have
 flawed implementations of the cache that stores locations of
 libraries.
 
+If you prefer to use the [Clang compiler](https://clang.llvm.org) in
+place of GCC for the native code, then you may use `./configure
+CC=clang` instead of the above to enable it.
+
+**Caution: Please understand that although it seems that Clang works
+as well as GCC, switching compiler is a large change for mature
+software.**
+
 
 ## Usage
 

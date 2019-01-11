@@ -44,4 +44,4 @@ api: .build.bstamp
 clean:
 	-$(MAKE) clean
 	@find . -name "*~" -delete
-	@rm -rf extract_GMP_CFLAGS .deps aclocal.m4 autom4te.cache config.guess config.h config.h.in config.log config.status config.sub configure depcomp install-sh libtool ltmain.sh m4 Makefile.in Makefile missing stamp-h1 INSTALL vec-*.tar.gz *.bstamp .*.bstamp
+	@rm -rf extract_GMP_CFLAGS .deps aclocal.m4 autom4te.cache config.guess config.h config.h.in config.log config.status config.sub configure depcomp install-sh libtool ltmain.sh m4 Makefile.in Makefile missing stamp-h1 INSTALL verificatum-vec-*.tar.gz *.bstamp .*.bstamp

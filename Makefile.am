@@ -63,7 +63,7 @@ lib_LTLIBRARIES = libvec.la
 libvec_la_SOURCES = ${UTILITY_SOURCES} ${MPZ_T_SOURCES} ${TABLE_OPTIMIZE_SOURCES} ${NAIVE_SOURCES} ${GENERIC_SOURCES} ${INNER_SOURCES} ${AFFINE_SOURCES} ${CURVE_SOURCES}
 
 libvec_la_LIBADD = -lgmp
-vec_LDADD = -lvec
+vec_LDADD = libvec.la
 
 include_HEADERS = vec.h
 vec_SOURCES = vec.c vec.h
