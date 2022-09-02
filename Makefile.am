@@ -80,9 +80,9 @@ dist_bin_SCRIPTS = $(BINDIR)/vec-info
 
 dist_noinst_DATA = extract_GMP_CFLAGS.c README.md LICENSE NEWS AUTHORS ChangeLog config.h jmul_template.h nistp224_macros.h vec.h jsmul_h_template.h nistp256_macros.h jfmul_h_template.h jsmul_template.h nistp521_macros.h jfmul_template.h templates.h jmulsw_template.h generic_macros.h a_eq_neg3_generic_macros.h undefine_macros.h ecp_nistp224_core.c ecp_nistp256_core.c ecp_nistp521_core.c ecp_nistp224_util.c ecp_nistp256_util.c ecp_nistp521_util.c doxygen.cfg vec-info.src
 
-all-local: .check_info.stamp
+all-local: check_info.stamp
 
-.check_info.stamp:
+check_info.stamp:
 	@echo ""
 	@echo "================================================================"
 	@echo ""
@@ -96,7 +96,7 @@ all-local: .check_info.stamp
 	@echo ""
 	@echo "================================================================"
 	@echo ""
-	@touch .check_info.stamp
+	@touch check_info.stamp
 
 install-data-hook:
 	@echo ""
@@ -138,4 +138,4 @@ cleanapi:
 
 clean-local: cleanapi cleancoverage
 	find . -name "*~" -delete
-	rm -rf *.stamp .*.stamp compile scriptmacros.m4 $(BINDIR)
+	rm -rf *.stamp compile scriptmacros.m4 $(BINDIR)
