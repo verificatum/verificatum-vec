@@ -23,7 +23,7 @@
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-AC_PREREQ([2.71])
+AC_PREREQ([2.69])
 AC_INIT([verificatum-vec],[m4_esyscmd([m4 .version.m4])],[info@verificatum.com])
 AC_LANG_PUSH([C])
 AM_INIT_AUTOMAKE([foreign tar-ustar -Wall -Werror -Wno-portability])
