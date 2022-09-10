@@ -5,4 +5,4 @@ dnl    library. The minor version should alternate between even (for stable
 dnl    releases) and odd (for development releases). Finally, bump the micro
 dnl    version every time you do a release of the software.
 dnl
-define(VEC_VERSION_STRING, 2.4.2)dnl
+define(VEC_VERSION_STRING, 2.5.0)dnl
