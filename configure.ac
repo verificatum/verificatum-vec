@@ -58,7 +58,7 @@ AC_CHECK_HEADERS([stdlib.h string.h unistd.h])
 AC_CHECK_HEADERS([gmp.h], ,
        [AC_MSG_ERROR(["GNU MP header not found, see http://gmplib.org/"])])
 
-gcc extract_GMP_CFLAGS.c -o extract_GMP_CFLAGS
+${CC} extract_GMP_CFLAGS.c -o extract_GMP_CFLAGS
 
 # Checks for typedefs, structures, and compiler characteristics.
 AC_TYPE_SIZE_T
