@@ -131,6 +131,7 @@ it to any location.
 
 Minor bugs should be reported in the repository system as issues or
 bugs. Security critical bugs, vulnerabilities, etc should be reported
-directly to [Verificatum Project](https://www.verificatum.org). We
-will make best effort to disclose the information in a responsible way
+directly to
+[https://www.verificatum.org](https://www.verificatum.org). We will
+make best effort to disclose the information in a responsible way
 before the finder gets proper credit.

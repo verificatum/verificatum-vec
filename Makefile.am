@@ -41,6 +41,8 @@ BINDIR = bin
 GMP_CFLAGS := $(shell ./extract_GMP_CFLAGS)
 
 OPTIONAL_FLAGS=-O3
+
+# Use this instead to run coverage analysis.
 # OPTIONAL_FLAGS=-fprofile-arcs -ftest-coverage
 
 # We use pedantic flags, strip the optimization flag of GMP, and
@@ -114,6 +116,7 @@ install-data-hook:
 check: vec
 	@./vec check
 
+# Uncomment OPTIONAL_FLAGS above to enable instrumentation.
 coverage: all
 	@./vec check
 	@rm -rf coverage
